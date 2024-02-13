@@ -7,10 +7,7 @@ function getPrimeNumber(num){
             console.log(`${ num} is a not prime number`);
             break;
         }
-        else{
             console.log(` ${ num} is a prime number`);
-            break;
-        }
     }
 }
 let PrimeNumber = getPrimeNumber(num);
