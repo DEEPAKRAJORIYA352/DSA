@@ -10,4 +10,4 @@ function getPrimeNumber(num){
             console.log(` ${ num} is a prime number`);
     }
 }
-let PrimeNumber = getPrimeNumber(num);
+getPrimeNumber(num);
