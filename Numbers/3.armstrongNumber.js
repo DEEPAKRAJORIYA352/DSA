@@ -12,7 +12,7 @@ function Armstrong(m){
     while(m>0){
         let rem = m%10;
         result = (result + (rem*rem*rem)); // 0+27 = 27  ,  27+125= 152 , 152+1=153
-        m =Math.floor(m/10);
+        m = Math.floor(m/10);
        
     }
     return result;
