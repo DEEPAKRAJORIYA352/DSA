@@ -5,13 +5,24 @@ Output: Yes
 1*1*1 + 5*5*5 + 3*3*3 = 153
 */
 
+
 let num = 153;
 
+function coutDigit(n){
+    let count = 0;
+    while(n>0){
+        n = Math.floor(n/10);
+       count++; 
+    }
+    return count;
+}
+
 function Armstrong(m){
+  let countNum = coutDigit(m);
     let result = 0;
     while(m>0){
         let rem = m%10;
-        result = (result + (rem*rem*rem)); // 0+27 = 27  ,  27+125= 152 , 152+1=153
+        result = (result + (Math.pow(rem,countNum))); // 0+27 = 27  ,  27+125= 152 , 152+1=153
         m = Math.floor(m/10);
        
     }
@@ -31,3 +42,4 @@ function ArmstrongNum(num){
 }
 
 ArmstrongNum(num);
+
